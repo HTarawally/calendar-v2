@@ -1,0 +1,580 @@
+@charset "utf-8";
+
+a {
+	text-decoration: none;
+	transition: color 0.5s;
+}
+
+a:hover {
+	color: #000 !important;
+}
+
+button {
+	cursor: pointer;
+}
+
+html, body {
+	width: 100%;
+	min-height: 100%;
+}
+
+html {
+	background: #131d31 url(images/background.png) no-repeat center center fixed; 
+	background-size: cover;
+}
+
+body {
+	font-family: Georgia, "Lucida Bright", "DejaVu Serif", serif;
+	font-size: 12px;
+	font-weight: bold;
+	min-width: 320px;
+}
+
+header, main, footer, .moreContent {
+	width: 82%;
+}
+
+header {
+	min-height: 50px;
+	background: #f2bb68;
+	background: rgba(242, 187, 104, 0.9);
+}
+
+header .left, header .right {
+	background: url(images/arrow.png);
+	width: 16px;
+	height: 13px;
+	margin-top: 6px;
+}
+
+header .left { /* left arrow */
+	float: left;
+	margin-left: 9px;
+}
+
+header .right { /* right arrow */
+	float: right;
+	margin-right: 9px;
+	transform: rotate(180deg);
+}
+
+header h1 { /* shows the page title */
+	font-size: 2.6em;
+	margin: 0px auto;
+	padding-top: 10px;
+	text-align: center;
+	color: #002f77;
+}
+
+header h1 a {
+	color: #002f77;
+}
+
+.left_pane, .month {
+	width: 23.125%;
+	float: left;
+	margin: 0 0 1% 2.5%;
+}
+
+.left_pane {
+	margin-left: 0;
+}
+
+.left_pane .month {
+	float: none;
+	width: 100%;
+}
+
+.button_group {
+	background: #000;
+	background: rgba(0, 0, 0, 0.125);
+	margin-top: 8%;
+}
+
+.button_group button {
+	width: 100%;
+	margin: 2% 0;	
+	font-size: 1.3em;
+	border-radius: 4px;
+	padding: 8px 0 4px 0;
+	text-align: left;
+	font-variant: small-caps;
+	text-indent: 3%;
+	background: #D8DCDE;
+	background: rgba(216, 220, 222, 0.8);
+	color: #464646;
+	letter-spacing: 1px;
+}
+
+.button_group button:hover {
+	background: #fff;
+	background: rgba(255, 255, 255, 0.9);
+	color: #0066cc;
+	cursor: pointer;
+}
+
+.button_group button:first-child {
+	margin-top: 0;	
+}
+
+.button_group button:last-child {
+	margin-bottom: 0;	
+}
+
+.right_pane {
+	width: 72%;
+	float: right;
+}
+
+.month {
+	background: #fbf3bd;
+	background: rgba(251, 243, 189, 0.9);
+	text-align: center;
+}
+
+/* remove left-margin for every 4 elements starting from first one */
+.month:nth-child(4n-3) {
+	margin-left: 0;
+}
+
+.month h2 { /* the month title.. i.e. January */
+	margin: 3px 0px;
+	font-size: 1.5em;
+}
+
+.month h2 a {
+	color: #0057da;
+}
+
+.month h3, .month span {
+	font-size: 1em;
+	margin: 2px 3.4%;
+	float: left;
+	width: 7.2%;
+}
+
+.month span { /* the day */
+	margin-top: 4px;
+}
+
+.month span a {
+	color: #0066ff;
+}
+
+/* the other class is for a day in a month that isn't part of the current month..
+i.e. diplaying the 31st of january in february */
+.month span.other a {
+	color: #69b7ff;
+}
+
+.special { /* display the special months in an orange colour */
+	background: #f5d694;
+	background: rgba(245, 214, 148, 0.9);
+}
+
+.today { /* highlighting of today's date in the calendar */
+	color: #A64AB9 !important;
+}
+
+.fieldHeader {
+	background: #D8DCDE;
+	background: rgba(216, 220, 222, 0.9);
+	min-height: 32px;
+}
+
+.fieldHeader h2 {
+	font-size: 1.2em;
+	padding-top: 12px;
+	padding-right: 5px;
+	text-align: right;
+	color: #474769;
+}
+
+.fieldHeader button {
+	float: left; 
+	margin-left: 8px;
+	margin-top: 4px;	
+	height: 15px;
+	width: 15px;
+	border-radius: 5px;
+	background: rgba(144, 188, 255, 0.75);
+	border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.fieldHeader button:nth-child(even) {
+	background: rgba(106, 120, 213, 0.3);	
+}
+
+.fieldHeader button:hover {
+	background: rgba(255, 255, 255, 0.75);	
+}
+
+.fieldContent {
+	background: #fff;
+	background: rgba(255, 255, 255, 0.9);
+	margin-top: 0.5%;
+	margin-bottom: 1.5%;
+	color: #0066cc;
+}
+
+.fieldContent .article, table {
+	padding: 1px 1%;
+	width: 98%;
+}
+
+.fieldContent button {
+	padding: 1px 4px;
+	margin: 0 auto;	
+	color: #400040;
+}
+
+table {
+	text-align: center;	
+}
+
+td {
+	padding: 2px;	
+}
+
+thead {
+	color: #656565;
+	font-size: 0.95em;
+}
+
+thead tr:nth-child(2) { /* selects the litle subheading under the main headings of the table */
+	color: #635764;
+	font-size: 0.75em;
+}
+
+tr th:first-child {
+	text-align: left;
+}
+
+tr td:first-child, .fieldContent .article :first-child {
+	color: #635764;
+}
+
+/* select first, second and last headings  */
+table tr:first-child th:nth-child(2) { 
+	background: #0066cc;
+	background: rgba(0, 102, 204, .15);
+}
+
+table tr:first-child th:nth-child(3) {
+	background: #FC0A03;
+	background: rgba(242, 10, 3, 0.15);
+}
+
+table tr:first-child th:last-child {
+	background: #464646;
+	background: rgba(70, 70, 70, 0.15);
+	text-align: right;
+}
+
+/* end selecting headings */
+
+/* styling for first column */
+table tr td:first-child {
+	font-size: 0.9em;
+	text-align: left;
+	color: #434343;	
+}
+
+tbody tr:nth-child(even) td:first-child {
+	color: #656565;
+}
+
+tfoot tr td:first-child {
+	color: #323232;
+}
+
+/* styling for second column*/
+tbody tr td:nth-child(n + 2) { 
+	background: #0066cc;
+	background: rgba(0, 102, 204, .1);	
+}
+
+tbody tr:nth-child(even) td:nth-child(n + 2) {
+	background: rgba(0, 102, 204, .03);	
+} 
+
+tfoot tr td:nth-child(n + 2) {
+	background: rgba(0, 102, 204, .15);	
+} 
+
+/* styling for third column*/
+tbody tr td:nth-child(n + 6), table.workdone tbody tr td:nth-child(n + 5) {
+	background: #FC0A03;
+	background: rgba(242, 10, 3, 0.1);
+	color: #FF2020;
+}
+
+tbody tr:nth-child(even) td:nth-child(n + 6), table.workdone tbody tr:nth-child(even) td:nth-child(n + 5) {
+	background: rgba(242, 10, 3, 0.03);
+} 
+
+tfoot tr td:nth-child(n + 6), table.workdone tfoot tr td:nth-child(n + 5) {
+	background: rgba(242, 10, 3, 0.15);
+	color: #FF2020;
+} 
+
+/* styling for last column */
+tbody tr td:last-child {
+	background: #464646;	
+	background: rgba(70, 70, 70, 0.1);
+	color: #464646;
+	text-align: right;
+}
+
+tbody tr:nth-child(even) td:last-child {
+	background: rgba(70, 70, 70, 0.03);
+} 
+
+tfoot tr td:last-child {
+	background: rgba(70, 70, 70, 0.15);
+	color: #464646;
+	text-align: right;
+} 
+
+/* override of fourth and five columns on workdone table */
+table.workdone thead tr:first-child th:nth-child(4), table.workdone thead tr:first-child th:nth-child(5) {
+	background: #CD9CD8;
+	background: rgba(205, 156, 216, 0.3);
+}
+
+table.workdone thead tr:last-child td:nth-child(8), table.workdone thead tr:last-child td:nth-child(9) {
+	background: none !important;
+}
+ 
+table.workdone tr td:nth-child(8), table.workdone tr td:nth-child(9) {
+	background: #CD9CD8;
+	background: rgba(205, 156, 216, 0.1) !important;
+	color: #AD5ABE !important;
+}
+
+table.workdone tbody tr:nth-child(even) td:nth-child(8), table.workdone tbody tr:nth-child(even) td:nth-child(9) {
+	background: rgba(205, 156, 216, 0.03) !important;
+}
+
+table.workdone tfoot tr td:nth-child(8), table.workdone tfoot tr td:nth-child(9) {
+	background: rgba(205, 156, 216, 0.2) !important;
+}
+
+.more {cursor: pointer;}
+
+.moreContent {
+	background: #fff;
+	position: fixed;
+	min-height: 180px;
+	max-height: 80%;
+	left: 9%;
+	top: -100%;
+	z-index: 10;
+}
+
+.moreContent:before, .moreContent:after {
+	content: "";
+	display: table;
+	width: 100%;
+}
+
+.moreContent h1, .moreContent h2, .moreContent h3 {
+	clear: both;	
+}
+
+.moreContent h1 {
+	font-size: 1.4em;
+	color: #fff;
+}
+
+.moreContent h2 {
+	margin-left: 6px;
+}
+
+.moreContent h3, .moreContent h4 {
+	width: 98%;
+	padding-left: 2%;
+}
+
+.moreContent h3 {
+	border-bottom: 1px dashed black;
+}
+
+.moreContent .jspPane > div {
+	float: left;
+	width: 31%;
+	margin: 5px 1%;
+	background: #0066cc;
+	background: rgba(0, 104, 208, 0.08);	
+}
+
+.moreContent .jspPane > div:nth-child(odd) {
+	background: rgba(0, 104, 208, 0.15);	
+}
+
+.moreContent .article {
+	padding-left: 6px;
+	margin-top: 3px;
+	color: #474769;
+}
+
+.moreContent p {
+	text-indent: 4px;	
+	font-size: 0.95em;
+}
+
+.moreContent button {
+	width: 12px;
+	height: 12px;	
+	cursor: pointer;
+	background: #0066cc;
+	background: rgba(0, 102, 204, 0.2);
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.moreContent button:hover {
+	background: rgba(0, 102, 204, 0.5);
+}
+
+.moreContent article div:last-child button {
+	background: #F00;
+	background: rgba(255, 0, 0, 0.2);	
+}
+
+.moreContent article div:last-child button:hover {
+	background: rgba(255, 0, 0, 0.5);	
+}
+
+.moreContent span {
+	display: inline-block;
+	padding-left: 8px;
+	color: #666;
+}
+
+#formHolder {
+	margin-top: 0;
+	background: #000;
+	background: rgba(0, 0, 0, 0.06);
+}
+
+.inputForm span {
+	font-size: 0.75em;	
+	color: #000;
+}
+
+label, input, select {
+	display: block;
+	width: 86%;
+	margin: 2px auto;
+	border-radius: 4px;
+}
+
+input, select {
+	color: #787878;	
+	padding: 0px 6px;
+	height: 24px;
+}
+
+input:focus, select:focus {
+	color: #0066cc;
+}
+
+input[type="submit"], input[type="button"] {
+	height: 42px;
+	font-size: 1.8em;	
+	cursor: pointer;
+	color: #efefef;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover {
+	color: #fff;
+}
+
+input[type="submit"] {
+	background: #0066cc;
+	background: rgba(24, 0, 225, 0.7);
+}
+
+input[type="submit"]:hover {
+	background: rgba(24, 0, 225, 1);
+}
+
+input[type="button"] {
+	background: #FF2020;
+	background: rgba(255, 0, 24, 0.7);
+	margin-right: 4px;
+	margin-top: 3px;
+}
+
+input[type="button"]:hover {
+	background: rgba(255, 0, 24, 1);
+}
+
+footer {
+	background: #000;	
+	background: rgba(0, 0, 0, 0.03);
+}
+
+footer button { /* for the buttons on the bottom left */ 
+	color: #ebebeb;
+	font-size: 1.2em;
+	padding: 3px 18px;
+	border: 1px solid rgba(0, 30, 142, 0.65);
+	background: rgb(0, 44, 111);
+	background: rgba(0, 44, 111, 0.65);
+	float: left;
+	cursor: pointer;
+	margin: 5px 8px;
+}
+
+footer button:hover {
+	color: #f5d694;
+}
+
+footer p { /* for the copyright statement on the botton right */
+	float: right;
+	text-align: right;
+	color: #06c;
+	margin: 12px 8px;
+}
+
+#blackOut {
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.9);
+	position: fixed;
+	top: 0px;
+	z-index: 1;
+}
+
+#error {
+	background: #FF5151;
+	background: rgba(255, 81, 81, 0.3);
+	max-width: 224px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	padding: 5px 10px;
+	color: #3F3F49;
+}
+
+/** 888888888888888888888 **/
+.fieldHeader, .fieldContent, #error, header, .button_group, .month, footer button, .moreContent, .moreContent button {
+	border-radius: 8px;
+}
+
+.jspVerticalBar {
+	background: #000;
+	background: rgba(0, 0, 0, 0.12);
+	width: 12px;	
+	right: 0;
+	display: none;
+}
+
+.jspDrag {
+	border-radius: 0;	
+}
+
+.moreContent .jspVerticalBar {
+	right: -12px;	
+}

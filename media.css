@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+@media only screen and (max-width: 1280px) {
+	.left_pane, .right_pane {
+		float: none;
+		width: 100% !important;
+	}
+	
+	.left_pane .month, .button_group {
+		margin: 0 !important;	
+	}
+	
+	.left_pane .month {
+		float: left;
+		width: 23.125%;
+	}
+	
+	.button_group {
+		float: right;
+		width: 75%;	
+		height: 165px;
+	}
+	
+	.button_group button {
+		float: left;
+		width: 40%;
+		margin: 18px 5% 0 5% !important;
+	}
+}
+
+@media only screen and (max-width: 1180px) {
+	header, main, footer, .moreContent {
+		width: 92%;	
+	}
+	
+	.moreContent {
+		left: 4%;	
+	}
+	
+	.left_pane .month {
+		width: 28.125%;	
+	}
+	
+	.button_group {
+		width: 70%;	
+	}
+}
+
+@media only screen and (max-width: 980px) {
+	body {
+		font-size: 11px;	
+	}
+	
+	.month {
+		width: 31.666%;
+		margin-left: 2.5% !important;
+	}
+	
+	.month:nth-child(3n + 1) {
+		margin-left: 0 !important;
+	}
+	
+	.left_pane .month {
+		width: 33.125%;	
+		height: 165px;
+	}
+	
+	.button_group {
+		width: 65%;	
+	}
+	
+	.moreContent .jspPane > div {
+		width: 47.5%;
+	}
+}
+
+@media only screen and (max-width: 680px) {
+	header, main, footer, .moreContent {
+		width: 96%;	
+	}
+	
+	.month {
+		width: 48.75%;
+		margin-left: 0 !important;
+	}
+	
+	.month:nth-child(even) {
+		margin-left: 2.5% !important;
+	}
+	
+	.left_pane .month {
+		font-size: 0.95em;
+	}
+
+	.moreContent {
+		left: 2%;	
+	}
+	
+	.moreContent .jspPane > div {
+		width: 97.5%;
+	}
+}
+
+@media only screen and (max-width: 580px) { 
+	.button_group, .left_pane .month {
+		width: 48.75%;
+	}
+	
+	.button_group button {
+		font-size: 1em;
+		width: 88%;
+		float: none;
+		margin-top: 5px !important;
+		padding-top: 3px; 
+	}
+	
+	.inputForm div {
+		float: none;
+		width: 95%;
+		margin: 5px 2.5% !important;
+		clear: both;
+	}
+	
+	.inputForm input, .inputForm select {
+		float: none;
+		margin: 0 auto;
+		padding: 0;
+	}
+}
