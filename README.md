@@ -1,6 +1,8 @@
 # Calendar V2
 
-<p align="center"><img src="../media/screenshot.png?raw=true" width="400" /></p>
+<p align="center">
+  <img src="../media/app_screenshot.png?raw=true" width="400" />
+</p>
 
 ## About
 
@@ -17,9 +19,14 @@ will do, including Internet Explore 11+.
 Clone this repository and upload the contents of the calendar-v2 folder to your
 web root.
 
-Open the includes/config.php file with a text editor of your choice. Search for
-`Config::$DB_NAME` and edit this line to change the database name to be used
-for installation. Edit the three lines that follow to complete the
+Open the includes/config.php file with a text editor of your choice.
+
+<p align="center">
+  <img src="../media/config_php_screenshot.png?raw=true" />
+</p>
+
+Search for `Config::$DB_NAME` and edit this line to change the database name to
+be used for installation. Edit the three lines that follow to complete the
 database details setup. Make sure that these details are correct and the
 database has already been created in MySQL before proceeding.
 
