@@ -6,6 +6,10 @@
 
 ## About
 
+A simple organiser system used to track birthdays, reminders, income &
+expenditure, and work hours & expected pay, all wrapped up in a simple
+calendar format.
+
 ## Requirements
 
 PHP version 5.0.0+, compiled with support for the MySQLi extension will be
