@@ -22,7 +22,7 @@ web root.
 Open the includes/config.php file with a text editor of your choice.
 
 <p align="center">
-  <img src="../media/config_php_screenshot.png?raw=true" />
+  <img src="../media/config_php_screenshot.png?raw=true" width="400" />
 </p>
 
 Search for `Config::$DB_NAME` and edit this line to change the database name to
@@ -31,8 +31,18 @@ database details setup. Make sure that these details are correct and the
 database has already been created in MySQL before proceeding.
 
 Open a web browser and visit the url you uploaded the project to and you will
-be redirected to the installation process. Click the "Start Installation" button
-to proceed. Once installation is complete, delete the "install" directory from
-the project and you are ready to go.
+be redirected to the installation process.
+
+<p align="center">
+  <img src="../media/installation_start_screenshot.png?raw=true" width="400" />
+</p>
+
+Click the "Start Installation" button to proceed. Once installation is
+complete, delete the "install" directory from the project and you are
+ready to go.
+
+<p align="center">
+  <img src="../media/installation_end_screenshot.png?raw=true" width="400" />
+</p>
 
 ## Usage
