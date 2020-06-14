@@ -1,7 +1,7 @@
 # Calendar V2
 
 <p align="center">
-  <img src="../media/app_screenshot.png?raw=true" width="400" />
+  <img src="../media/app_screenshot.png?raw=true" width="500" />
 </p>
 
 ## About
