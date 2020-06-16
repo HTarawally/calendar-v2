@@ -50,3 +50,36 @@ ready to go.
 </p>
 
 ## Usage
+
+Visiting the home route of the project brings you into the calendar view of
+the current year.
+
+From here, clicking on the arrow buttons on the top banner will navigate through
+the years of the calendar. Clicking on the year will bring you back to the
+calendar view of the current year.
+
+For the real fun, click on month or day value on the calendar to be brought to
+a view of that month or day. From there, you can begin to add content to the
+calendar.
+
+The simplest content to add is a birthday reminder. Click on the "Birthday"
+button to add a birthday. You are then able to enter the person's name and
+their date of birth.
+
+The next simplest to add would be a generic reminder. Click on the "Reminder"
+button to add a generic reminder. You are then able to enter the reminder comment,
+the date of the reminder, how often this reminder should occur and optionally
+how many times this reminder should be repeated (-1 being not repeated).
+
+Adding payments and work done is a little bit more involved. First a payment
+category or company needs to be created to be able to add payments and work
+done respectively. This can be done by clicking the "Payment Category" or
+"Company buttons" and entering name of the category or company.
+
+Now you will be able to add a payment by clicking on the "Payment" button and
+entering the date of the payment, the amount, whether it was spent or received,
+and the category this payment belongs to.
+
+Adding work done is similar. Click on the "Work Done" button to enter the
+date, the company, the number of hours worked and pay per hour, and optionally
+any overtime work and wage.
