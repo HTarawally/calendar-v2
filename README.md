@@ -62,6 +62,8 @@ From here, clicking on the arrow buttons on the top banner will navigate through
 the years of the calendar. Clicking on the year will bring you back to the
 calendar view of the current year.
 
+### Adding content
+
 For the real fun, click on month or day value on the calendar to be brought to
 a view of that month or day. From there, you can begin to add content to the
 calendar.
@@ -90,7 +92,7 @@ how many times this reminder should be repeated (-1 being infinite).
 Adding payments and work done is a little bit more involved. First a payment
 category or company needs to be created to be able to add payments and work
 done respectively. This can be done by clicking the "Payment Category" or
-"Company buttons" and entering name of the category or company.
+"Company" buttons and entering name of the category or company.
 
 <p>
   <img src="../media/payment_category_screenshot.png?raw=true" width="500" />
@@ -115,3 +117,38 @@ any overtime work and wage.
 <p>
   <img src="../media/work_done_screenshot.png?raw=true" width="500" />
 </p>
+
+### Editing and deleting content
+
+Once added, birthdays and reminders can be easily edited or deleted by clicking
+on the "Edit" or "Delete" button next to the birthday or reminder.
+
+To edit or delete a payment, first you would need to drill into the payment
+breakdowns by clicking on the "Payment Breakdown" button.
+
+A popup will open. Through this popup, a payment can edited or deleted by
+clicking on the blue "Edit" or red "Delete" buttons respectively.
+
+Editing or deleting a payment category can be done in a similar fashion. Click
+on the "Payment Categories" button and a popup will open where a payment category
+can be edited or deleted. Be warned, a payment category cannot be deleted if
+there are any payments attached to it.
+
+And lastly, to edit or delete work done, first you would need to drill into
+the work done breakdowns by clicking on the "Work Done Breakdown" button.
+
+A popup will open. Through this popup, work done can edited or deleted by
+clicking on the blue "Edit" or red "Delete" buttons respectively.
+
+Editing or deleting a company can be done in a similar fashion. Click
+on the "Companies" button and a popup will open where a company can be edited
+or deleted. Be warned, a company cannot be deleted if there are any work done
+attached to it.
+
+### Other navigation
+
+Within the day view, clicking on the date on the top banner will take you to
+the month view.
+
+Within the month view, clicking on the month and year on the top banner will
+to you to the year view for that month.
