@@ -126,6 +126,8 @@ on the "Edit" or "Delete" button next to the birthday or reminder.
 To edit or delete a payment, first you would need to drill into the payment
 breakdowns by clicking on the "Payment Breakdown" button.
 
+<img src="../media/show_payments_breakdown_screenshot.png?raw=true" width="500" />
+
 A popup will open. Through this popup, a payment can edited or deleted by
 clicking on the blue "Edit" or red "Delete" buttons respectively.
 
