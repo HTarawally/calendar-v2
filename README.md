@@ -25,9 +25,7 @@ web root.
 
 Open the includes/config.php file with a text editor of your choice.
 
-<p>
-  <img src="../media/config_php_screenshot.png?raw=true" width="500" />
-</p>
+<img src="../media/config_php_screenshot.png?raw=true" width="500" />
 
 Search for `Config::$DB_NAME` and edit this line to change the database name to
 be used for installation. Edit the three lines that follow to complete the
@@ -37,26 +35,20 @@ database has already been created in MySQL before proceeding.
 Open a web browser and visit the url you uploaded the project to and you will
 be redirected to the installation process.
 
-<p>
-  <img src="../media/installation_start_screenshot.png?raw=true" width="500" />
-</p>
+<img src="../media/installation_start_screenshot.png?raw=true" width="500" />
 
 Click the "Start Installation" button to proceed. Once installation is
 complete, delete the "install" directory from the project and you are
 ready to go.
 
-<p>
-  <img src="../media/installation_end_screenshot.png?raw=true" width="500" />
-</p>
+<img src="../media/installation_end_screenshot.png?raw=true" width="500" />
 
 ## Usage
 
 Visiting the home route of the project brings you into the calendar view of
 the current year.
 
-<p>
-  <img src="../media/home_screenshot.png?raw=true" width="500" />
-</p>
+<img src="../media/home_screenshot.png?raw=true" width="500" />
 
 From here, clicking on the arrow buttons on the top banner will navigate through
 the years of the calendar. Clicking on the year will bring you back to the
@@ -68,55 +60,41 @@ For the real fun, click on month or day value on the calendar to be brought to
 a view of that month or day. From there, you can begin to add content to the
 calendar.
 
-<p>
-  <img src="../media/month_screenshot.png?raw=true" width="500" />
-</p>
+<img src="../media/month_screenshot.png?raw=true" width="500" />
 
 The simplest content to add is a birthday reminder. Click on the "Birthday"
 button to add a birthday. You are then able to enter the person's name and
 their date of birth.
 
-<p>
-  <img src="../media/birthday_screenshot.png?raw=true" width="500" />
-</p>
+<img src="../media/birthday_screenshot.png?raw=true" width="500" />
 
 The next simplest to add would be a generic reminder. Click on the "Reminder"
 button to add a generic reminder. You are then able to enter the reminder comment,
 the date of the reminder, how often this reminder should occur and optionally
 how many times this reminder should be repeated (-1 being infinite).
 
-<p>
-  <img src="../media/reminder_screenshot.png?raw=true" width="500" />
-</p>
+<img src="../media/reminder_screenshot.png?raw=true" width="500" />
 
 Adding payments and work done is a little bit more involved. First a payment
 category or company needs to be created to be able to add payments and work
 done respectively. This can be done by clicking the "Payment Category" or
 "Company" buttons and entering name of the category or company.
 
-<p>
-  <img src="../media/payment_category_screenshot.png?raw=true" width="500" />
-</p>
+<img src="../media/payment_category_screenshot.png?raw=true" width="500" />
 
-<p>
-  <img src="../media/company_screenshot.png?raw=true" width="500" />
-</p>
+<img src="../media/company_screenshot.png?raw=true" width="500" />
 
 Now you will be able to add a payment by clicking on the "Payment" button and
 entering the date of the payment, the amount, whether it was spent or received,
 and the category this payment belongs to.
 
-<p>
-  <img src="../media/payment_screenshot.png?raw=true" width="500" />
-</p>
+<img src="../media/payment_screenshot.png?raw=true" width="500" />
 
 Adding work done is similar. Click on the "Work Done" button to enter the
 date, the company, the number of hours worked and pay per hour, and optionally
 any overtime work and wage.
 
-<p>
-  <img src="../media/work_done_screenshot.png?raw=true" width="500" />
-</p>
+<img src="../media/work_done_screenshot.png?raw=true" width="500" />
 
 ### Editing and deleting content
 
@@ -131,21 +109,31 @@ breakdowns by clicking on the "Payment Breakdown" button.
 A popup will open. Through this popup, a payment can edited or deleted by
 clicking on the blue "Edit" or red "Delete" buttons respectively.
 
+<img src="../media/payments_breakdown_screenshot.png?raw=true" width="500" />
+
 Editing or deleting a payment category can be done in a similar fashion. Click
 on the "Payment Categories" button and a popup will open where a payment category
 can be edited or deleted. Be warned, a payment category cannot be deleted if
 there are any payments attached to it.
 
+<img src="../media/show_payment_categories_screenshot.png?raw=true" width="500" />
+
 And lastly, to edit or delete work done, first you would need to drill into
 the work done breakdowns by clicking on the "Work Done Breakdown" button.
 
+<img src="../media/show_work_done_breakdown_screenshot.png?raw=true" width="500" />
+
 A popup will open. Through this popup, work done can edited or deleted by
 clicking on the blue "Edit" or red "Delete" buttons respectively.
+
+<img src="../media/work_done_breakdown_screenshot.png?raw=true" width="500" />
 
 Editing or deleting a company can be done in a similar fashion. Click
 on the "Companies" button and a popup will open where a company can be edited
 or deleted. Be warned, a company cannot be deleted if there are any work done
 attached to it.
+
+<img src="../media/show_companies_screenshot.png?raw=true" width="500" />
 
 ### Other navigation
 
